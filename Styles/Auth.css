@@ -28,8 +28,15 @@
 }
 
 @keyframes authFadeIn {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .auth-header {
@@ -76,18 +83,20 @@
     color: #555;
 }
 
-.auth-footer a {
-    color: #2563eb;
-    font-weight: 600;
-    text-decoration: none;
-}
+    .auth-footer a {
+        color: #2563eb;
+        font-weight: 600;
+        text-decoration: none;
+    }
 
-.auth-footer a:hover {
-    text-decoration: underline;
-}
+        .auth-footer a:hover {
+            text-decoration: underline;
+        }
 
 /* ---------- CAPTCHA ---------- */
-.captcha-group { margin-bottom: 20px; }
+.captcha-group {
+    margin-bottom: 20px;
+}
 
 .captcha-row {
     display: flex;
@@ -112,9 +121,9 @@
     padding: 6px;
 }
 
-.captcha-refresh:hover {
-    color: #1e40af;
-}
+    .captcha-refresh:hover {
+        color: #1e40af;
+    }
 
 /* ---------- Dashboard ---------- */
 .dashboard-top-bar {
@@ -174,27 +183,38 @@
     gap: 4px;
 }
 
-.info-item label {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: #94a3b8;
-    font-weight: 600;
-}
+    .info-item label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #94a3b8;
+        font-weight: 600;
+    }
 
-.info-item span {
-    font-size: 15px;
-    color: #1e293b;
-}
+    .info-item span {
+        font-size: 15px;
+        color: #1e293b;
+    }
 
-.info-item.full-width {
-    grid-column: 1 / -1;
-}
+    .info-item.full-width {
+        grid-column: 1 / -1;
+    }
 
 @media (max-width: 640px) {
-    .dashboard-view-grid { grid-template-columns: 1fr; }
-    .dashboard-profile-header { flex-direction: column; text-align: center; }
-    .dashboard-top-bar { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .dashboard-view-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard-top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
 }
 
 /* ---------- Status banners (used on Login + Dashboard) ---------- */
@@ -225,4 +245,67 @@
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* =========================================================
+   Responsive: small phones & touch devices
+   ========================================================= */
+
+@media (max-width: 480px) {
+    .auth-wrapper {
+        padding: 16px;
+    }
+
+    .auth-header {
+        padding: 26px 20px 20px;
+    }
+
+        .auth-header h1 {
+            font-size: 20px;
+        }
+
+        .auth-header p {
+            font-size: 13px;
+        }
+
+    .auth-icon {
+        font-size: 32px;
+    }
+
+    .auth-body-form {
+        padding: 20px;
+    }
+
+    .auth-footer {
+        padding: 14px 20px 22px;
+    }
+
+    .dashboard-card {
+        padding: 18px;
+    }
+
+    .dashboard-photo {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+@media (max-width: 600px) {
+    .captcha-row {
+        flex-wrap: wrap;
+    }
+
+    .captcha-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Bigger tap target for the submit button on phones/touch, matching the
+   general .btn touch-target rule in Site.css. */
+@media (max-width: 600px), (pointer: coarse) {
+    .auth-submit-btn {
+        min-height: 46px;
+        font-size: 15px;
+    }
 }

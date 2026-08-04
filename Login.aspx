@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="Styles/Site.css" />
     <link rel="stylesheet" href="Styles/Auth.css" />
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
     <style>
         .auth-icon {
             display: inline-block;
@@ -24,6 +25,7 @@
 </head>
 <body class="auth-body">
     <form id="form1" runat="server">
+
         <div class="auth-wrapper">
             <div class="auth-card">
                 <div class="auth-header">
@@ -67,7 +69,7 @@
 
                 <div class="auth-footer">
                     <p>New student? <a href="Register.aspx">Register here &rarr;</a></p>
-                    <p class="no-print"><a href="AdminLogin.aspx" style="color:#f00">Admin Login &rarr;</a></p>
+                    <p class="no-print"><a href="Landing.aspx">&larr; Back</a></p>
                 </div>
             </div>
         </div>

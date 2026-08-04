@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="Styles/Site.css" />
     <link rel="stylesheet" media="print" href="Styles/Print.css" />
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
     <style>
         .filter-bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; margin: 14px 0; }
         .filter-bar .field { display: flex; flex-direction: column; min-width: 160px; }

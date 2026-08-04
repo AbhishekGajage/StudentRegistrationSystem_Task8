@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Scripts/intlTelInput/css/intlTelInput.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Scripts/intlTelInput/js/intlTelInput.min.js"></script>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -126,7 +127,7 @@
 
                     <div class="form-group full-width">
                         <label>Profile Photo (JPG, JPEG, PNG &mdash; max 2 MB)</label>
-                        <div style="display:flex;align-items:center;gap:16px;">
+                        <div class="photo-upload-row">
                             <img id="editPhotoPreview" runat="server" class="photo-preview" alt="Preview" />
                             <asp:FileUpload ID="fuEditProfilePhoto" runat="server" onchange="previewProfilePhoto(this, 'editPhotoPreview')" />
                         </div>

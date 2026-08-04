@@ -29,6 +29,7 @@
         .stat-approved    { background: linear-gradient(135deg, #0891b2, #06b6d4); }
         .stat-rejected    { background: linear-gradient(135deg, #dc2626, #ef4444); }
     </style>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
 </head>
 <body>
     <form id="form1" runat="server">

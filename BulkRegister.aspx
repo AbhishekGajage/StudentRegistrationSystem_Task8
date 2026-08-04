@@ -24,6 +24,7 @@
         table.temp-grid img.thumb { width: 36px; height: 36px; object-fit: cover; border-radius: 4px; }
         .bulk-actions { margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap; }
     </style>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
 </head>
 <body>
     <form id="form1" runat="server">

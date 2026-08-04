@@ -175,7 +175,20 @@
         .action-menu-item:hover { background: #f3f4f6; }
         .action-menu-item.action-positive { color: #16a34a; }
         .action-menu-item.action-negative { color: #dc2626; }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 700px) {
+            /* table-layout:fixed + no min-width would just crush all 8 columns
+               into the viewport width instead of scrolling. Force a sane
+               minimum so .table-scroll's overflow-x:auto actually kicks in. */
+            .candidate-grid { min-width: 760px; }
+        }
+        @media (max-width: 480px) {
+            .filter-bar .field { flex: 1 1 100%; min-width: 0; }
+            .filter-bar .field .btn { width: 100%; }
+        }
     </style>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
 </head>
 <body>
     <form id="form1" runat="server">
